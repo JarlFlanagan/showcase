@@ -107,15 +107,15 @@ color: #324A5F;
 
         </div>
         <div class="large-6 columns">
-            <img src="https://pbs.twimg.com/media/BrGxZihIIAAr0Q4.jpg:large" alt="pic of me and my girls at the walk"/>
+            <img src="<%= image_path ('thewalk.jpg') %>" alt="pic of me and my girls at the walk"/>
             <caption><i><small>Part of my high school youth group</small></i></caption>
          </div>
           <div class="large-12 columns">
-            <img class=" pic2" src="https://pbs.twimg.com/media/BqsevEzCIAAkvgF.jpg" alt="pic of me and my husband"/>
+            <img class=" pic2" src="<%= image_path ('ryanani.jpg') %>" alt="pic of me and my husband"/>
             <br />
             <caption><i><small>My Husband Ryan and I</small></i></caption>
             <img class=" pic2" src="<%= image_path ('kellynf.jpg') %>" alt="pic of me and my husband"/>
-
+            <%= image_tag ('kellynf.jpg', alt: 'here is an alt tag')%>
          </div>
         <!--end main content-->
 
