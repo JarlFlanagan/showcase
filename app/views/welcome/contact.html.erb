@@ -1,1 +1,46 @@
-<p>My name is <%= @name %> </p>
+     <!-- Nav Bar -->
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="contain-to-grid sticky">
+          <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+            <ul class="title-area">
+              <li class="name">
+              <h1><a href="#">My TTS Project</a></h1>
+              </li>
+            </ul>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#">Hello, <%= @name %></a>
+                    <ul class="dropdown">
+                      <li><a href="#">My profile</a></li>
+                    <li class="active"><a href="#">Account Settings</a></li>
+              </ul>
+              </li>
+                <li><a href="../welcome/index">Home</a></li>
+                <li><a href="../welcome/about">About</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
+          </div><!--end sticky column-->
+        </div><!--end column-->
+      </div>
+      <!--end nav-->
+            <!-- Main Page Content and Sidebar -->
+     
+      <div class="row">
+
+      <!--begin breadcrumbs-->
+       <div class="large-8 columns">
+      <h2><small>Contact</small></h2>
+       <ul class="breadcrumbs">
+        <li><a href="#" alt="Home page">Home</a></li>
+        <li><a href="../welcome/about" alt="About page">About</a></li>
+        <li class="current"><a href="#" alt="Contact page">Contact</a></li>
+       </ul>
+     </div>
+
+ </div><!--end row-->
+     <!--End breadcrumbs-->

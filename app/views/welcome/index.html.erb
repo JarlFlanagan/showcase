@@ -66,15 +66,30 @@ color: #324A5F;
 
       <div class="row">
         <div class="large-12 columns">
-          <div class="nav-bar right">
-           <ul class="button-group">
-            <li class="active"><a href="../welcome/index" class="button">Home</a></li>
-             <li><a href="../welcome/about" class="button">About Me</a></li>
+          <div class="contain-to-grid sticky">
+          <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+            <ul class="title-area">
+              <li class="name">
+              <h1><a href="#">My TTS Project</a></h1>
+              </li>
             </ul>
-          </div>
-          <h1>My TTS Project</h1>
-          <hr />
-        </div>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#">Hello, <%= @name %></a>
+                    <ul class="dropdown">
+                      <li><a href="#">My Profile</a></li>
+                    <li class="active"><a href="#">Account Settings</a></li>
+              </ul>
+              </li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="../welcome/about">About</a></li>
+                <li><a href="../welcome/contact">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
+          </div><!--end sticky column-->
+        </div><!--end column-->
       </div>
      
       <!-- End Nav -->
@@ -90,6 +105,7 @@ color: #324A5F;
        <ul class="breadcrumbs">
         <li class="current"><a href="#" alt="Home page">Home</a></li>
         <li><a href="../welcome/about" alt="About page">About</a></li>
+        <li><a href="../welcome/contact" alt="Contact page">Contact</a></li>
        </ul>
      </div>
      <!--End breadcrumbs-->
