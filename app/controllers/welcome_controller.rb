@@ -15,6 +15,7 @@ class WelcomeController < ApplicationController
     end
 
     private
+
         def set_color
 
          @name = params[:name]
