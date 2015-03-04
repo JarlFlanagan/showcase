@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'works' => 'works#index'
 
+  get 'portfolio' => 'portfolio#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
