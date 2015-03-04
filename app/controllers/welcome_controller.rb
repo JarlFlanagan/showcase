@@ -14,6 +14,10 @@ class WelcomeController < ApplicationController
         @name = params[:name] 
     end
 
+
+  def portfolio
+  end
+
     private
 
         def set_color
